@@ -1,0 +1,168 @@
+/* General styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	background-color: #f4f4f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1rem;
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	margin: 0.5rem 0;
+	border: none;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 0.25rem;
+}
+
+.btn:hover {
+	background-color: #0069d9;
+}
+
+.form-control {
+	margin-bottom: 1rem;
+}
+
+input[type='text'],
+select {
+	display: block;
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 1rem;
+	border-radius: 0.25rem;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+/* Join page styles */
+
+.join-container {
+	max-width: 600px;
+	margin: 5rem auto;
+	background-color: #fff;
+	padding: 2rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.join-header {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.join-header h1 {
+	font-size: 3rem;
+}
+
+.join-main form {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Chat page styles */
+
+.chat-container {
+	max-width: 800px;
+	margin: 5rem auto;
+	background-color: #fff;
+	padding: 2rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.chat-header h1 {
+	font-size: 3rem;
+}
+
+.chat-header .btn {
+	background-color: #dc3545;
+}
+
+.chat-main {
+	display: flex;
+}
+
+.chat-sidebar {
+	flex-basis: 30%;
+	padding-right: 2rem;
+}
+
+.chat-sidebar h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.chat-sidebar h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.chat-sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.chat-sidebar li {
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.chat-messages {
+	flex-grow: 1;
+	border: 1px solid #ccc;
+	padding: 1rem;
+	overflow-y: auto;
+}
+
+.chat-form-container {
+	margin-top: 2rem;
+}
+
+#chat-form {
+	display: flex;
+}
+
+#msg {
+	flex-grow: 1;
+	padding: 0.5rem;
+	font-size: 1rem;
+
+}
+#msg,
+#chat-form button {
+	height: 40px;
+	line-height: 40px;
+}
