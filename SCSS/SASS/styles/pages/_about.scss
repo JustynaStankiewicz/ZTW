@@ -1,0 +1,57 @@
+.about{
+    @include flexCenter(initial, $charcoalblack);
+
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        height: 90vh;
+        z-index: 1;
+        width: 100%;
+        max-width: 1700px;
+        padding-right: 24px;
+        padding-left: 24px;
+
+        @include tablet{
+            grid-template-columns: 1fr;
+            height: 100%;
+        }
+
+        &--left{
+            width: 100%;
+            line-height: 1.2;
+
+            @include tablet{
+                padding: 5rem 0;
+            }
+        }
+
+        &--left h1{
+            font-size: 3rem;
+            color: $sandybrown;
+        }
+        &--left h2{
+            font-size: 2rem;
+            color: $light;
+        }
+
+        &--left p{
+            font-size: 1rem;
+            color: $light;
+            margin-top: 2rem;
+            font-weight: 700;
+        }
+        &--right{
+            text-align: center;
+        }
+
+        &--img{
+            height: 600px;
+            width: 500px;
+        }
+
+
+    }
+}

@@ -1,0 +1,23 @@
+body{
+    font-family: $font-stack;
+    color: $light;
+}
+
+h1, h2, p{
+    font-weight: 700;
+}
+
+h1{
+    font-size: 4rem;
+    color: $sandybrown;
+}
+
+h2{
+    font-size: 3rem;
+    color: $light;
+}
+
+p{
+    font-size: 1rem;
+    color: $light;
+}

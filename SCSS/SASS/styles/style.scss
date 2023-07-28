@@ -1,0 +1,24 @@
+// Base
+@import "./base/colors";
+@import "./base/variables";
+@import "./base/typography";
+@import "./base/mixins";
+@import "./base/deafult";
+@import "./base/media-queries";
+@import "./base/functions";
+
+// Components
+@import "./components/navbar";
+@import "./components/buttons";
+@import "./components/hover";
+@import "./components/align-center";
+
+// Pages
+@import "./pages/main";
+@import './pages/signup';
+@import './pages/about';
+@import "./pages/gallery";
+
+
+
+

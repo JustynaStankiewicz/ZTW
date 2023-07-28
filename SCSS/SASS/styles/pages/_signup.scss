@@ -1,0 +1,91 @@
+.signup{
+    @include flexCenter(initial, $charcoalblack);
+    &__background{
+        align-items: right;
+        &--img{
+            height: 600px;
+            width: 69%;
+            position:absolute;
+            z-index:0;
+            bottom: 0px;
+            
+        }
+    }
+    &__container{
+        @include gradient(to right, $list);
+        color: $charcoalblack;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 2rem auto;
+        width: 35%;
+        height: auto;
+        position:absolute;
+        z-index:1;
+
+        @include tablet{
+            grid-template-columns: 1fr;
+            height: 100%;
+        }
+
+        &--table{
+            width: 100%;
+        }
+
+        &--table td{
+            padding: 10px;
+        }
+
+        &--btn{
+            @extend %btn;
+        }
+       
+    
+
+    }
+
+    
+    .signup__container {
+        display: flex;
+        flex-direction: column;
+      
+        h3 {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+      
+        &--table {
+          margin: 0 auto;
+          text-align: center;
+        }
+      
+        &--username,
+        &--password {
+          td:first-child {
+            padding-right: 50px;
+            font-size: 10pt;
+            font-weight: bold;
+          }
+        }
+      
+        &--submit {
+          td {
+            text-align: right;
+          }
+        }
+      
+        &--btn {
+          display: inline-block;
+          background-color: $charcoalblack;
+          color: $light;
+      
+          &:hover {
+            background-color: darken($charcoalblack, 10%);
+          }
+      
+          a {
+            color: $light;
+            text-decoration: none;
+          }
+        }
+    }
+}
